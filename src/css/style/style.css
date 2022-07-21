@@ -1,0 +1,45 @@
+body{
+  background: #ffc1ff; 
+  font-family: 'Edu SA Beginner', cursive , sans-serif;
+}
+
+header{
+    margin-top: 30px;
+}
+
+header .nav{
+/*indicando la altura minima que quiero*/
+    min-height: 80px;
+    overflow: hidden;
+    background: rgb(253, 253, 253)
+}
+
+/*---LOGO----*/
+
+header .logo h2,
+header .logo span,
+header .logo p{
+    font-size:16px;
+    display: inline-block;
+    margin: 0%;
+}
+
+header .logo h2{
+    /*indco el tamaño que deseo de la funte y convierto la letra en mayuscula*/
+    font-weight: 800;
+    text-transform: uppercase ; /* especifica el cambio entre mayúsculas y minúsculas del texto de un elemento*/
+
+}
+
+header .logo .name{
+    color:#e44f9c ;
+}
+header .logo .icono{
+    color: #bfbfbf;
+}
+
+header .logo p {
+    color: #777;
+}
+
+

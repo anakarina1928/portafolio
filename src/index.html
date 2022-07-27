@@ -13,12 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,600;0,800;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,600;0,800;1,100;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style/style.css">
-
+    <link rel="shortcut icon" class="logo" href="./img/ana200x200.png">
 
     <title>Portafolio de Ana Karina</title>
 </head>
@@ -33,9 +35,9 @@
                     justfy-content-lg-start : indico que para un tamaño largo quiero que el texto este a la izquierda
                     -->
     <!--LOGOTIPO-->
-    <section class="container-fluid">
-    <header>
-        
+    <section class="container">
+        <header>
+
             <div class="navbar row rounded-top d-flex  align-items-stretch justify-content-between ">
                 <div
                     class=" col-md-12 col-lg logo d-flex align-items-center justify-content-center justify-content-lg-start logo ">
@@ -67,68 +69,106 @@
                 </div>
             </div>
 
-           
-    </header>
-    <main class="container">
+
+        </header>
+        <main class="container">
 
 
-        <div class="row d-flex align-items-center acerca-de">
-            <div class="col-12 col-lg-4 foto">
+            <div class="row d-flex align-items-center acerca-de">
+                <div class="col-12 col-lg-4 foto">
 
-                <img class="rounded-circle img-fluid" src="./img/ana200x200.png" alt="foto de perfil">
+                    <img class="rounded-circle img-fluid" src="./img/ana200x200.png" alt="foto de perfil">
+                </div>
+
+                <div class=" col-12 col-lg-8 info">
+
+                    <h2 class="titulo">¡Hola!</h2>
+                    <p class="resumen">
+                        Soy una front-end developer apasionada por el artes y la tecnología,
+                        con experiencia de educación en derecho. Soy una mujer muy comprometida
+                        con mi crecimiento personal y profesional, enfocada en la construcción de
+                        espacios que tengan un impacto positivo en el mundo que me rodea. Como desarrolladora,
+                        reconozco el gran aporte del trabajo colaborativo, que permite crear soluciones creativas y
+                        eficaces en tecnología, asegurando cuidar la experiencia del usuario.
+                    </p>
+                    <span class="label badge rounded-pill bg-primary">HTML</span>
+                    <span class="label badge rounded-pill bg-secondary">css</span>
+                    <span class="label badge rounded-pill bg-success">JavaScrpit</span>
+                    <span class="label badge rounded-pill bg-danger">React</span>
+                    <span class="label badge rounded-pill bg-warning text-dark">Node.js</span>
+                    <span class="label badge rounded-pill bg-info text-dark">Firebase</span>
+                    <span class="label badge rounded-pill bg-light text-dark">bootstrap</span>
+                    <span class="label badge rounded-pill bg-dark">Jest</span>
+                </div>
+
             </div>
 
-            <div class=" col-12 col-lg-8 info">
+        </main>
 
-                <h2 class="titulo">¡Hola!</h2>
-                <p class="resumen">
-                    Soy una front-end developer apasionada por el artes y la tecnología,
-                    con experiencia de educación en derecho. Soy una mujer muy comprometida
-                    con mi crecimiento personal y profesional, enfocada en la construcción de
-                    espacios que tengan un impacto positivo en el mundo que me rodea. Como desarrolladora,
-                    reconozco el gran aporte del trabajo colaborativo, que permite crear soluciones creativas y
-                    eficaces en tecnología, asegurando cuidar la experiencia del usuario.
-                </p>
-                <span class="label badge rounded-pill bg-primary">HTML</span>
-                <span class="label badge rounded-pill bg-secondary">css</span>
-                <span class="label badge rounded-pill bg-success">JavaScrpit</span>
-                <span class="label badge rounded-pill bg-danger">React</span>
-                <span class="label badge rounded-pill bg-warning text-dark">Node.js</span>
-                <span class="label badge rounded-pill bg-info text-dark">Firebase</span>
-                <span class="label badge rounded-pill bg-light text-dark">bootstrap</span>
-                <span class="label badge rounded-pill bg-dark">Jest</span>
+        <div id="carouselExampleControls" class="carousel carousel-dark slide d-none d-sm-block" data-bs-ride="carousel ">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="./img/burguer-lab.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="./img/data-lovers.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="./img/gifs.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
-    </main>
-    <div id="  carouselExampleControls" class="carousel slide d-flex align-items-center" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/burguer-lab.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/social.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/gifs.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    </section>
 
 
-</section>
 
-   
-    
 
     <!--importante colocarlo en este orden-->
     <script src="js/jquery-3.6.0.min.js"></script>

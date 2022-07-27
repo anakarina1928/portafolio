@@ -1,17 +1,15 @@
 body{
-  background: #ffc1ff; 
-  font-family: 'Edu SA Beginner', cursive , sans-serif;
+  background: #f5f4f57c; 
+  font-family:  'Montserrat', sans-serif;
 }
 
-header{
-    margin-top: 30px;
-}
 
-header .nav{
+
+header .navbar{
 /*indicando la altura minima que quiero*/
     min-height: 80px;
     overflow: hidden;
-    background: rgb(253, 253, 253)
+    background:#b0c2f2;
 }
 
 /*---LOGO----*/
@@ -33,6 +31,7 @@ header .logo h2{
 
 header .logo .name{
     color:#e44f9c ;
+    padding: 10px;
 }
 header .logo .icono{
     color: #bfbfbf;
@@ -42,4 +41,49 @@ header .logo p {
     color: #777;
 }
 
+/*MENU*/
+header .menu{
+    background:#b0c2f2;
+    padding: 0;
+    font-weight: 1000
+    ;
 
+}
+header .menu a {
+ display: block;
+ padding:  0 30px;
+ text-decoration: none;/*para quitar las lineas que pueda tener*/
+ color: #fffefe;
+}
+
+
+
+header .menu .c-1:hover{ background: #9eb4f3fd}
+header .menu .c-2:hover{ background: #9eb4f3fd}
+header .menu .c-3:hover{ background: #9eb4f3fd}
+
+/*-----ACERCA DE MI------*/
+.acerca-de{
+    padding: 30px;
+    margin-bottom: 40px;
+}
+.acerca-de .foto{
+    text-align: center;
+}
+.acerca-de .info .titulo{
+    color: #e44f9c;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.acerca-de .info .resumen{
+    letter-spacing: 1px;
+    color: #0a0a0a;
+}
+
+.acerca-de .info .label{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10p
+}

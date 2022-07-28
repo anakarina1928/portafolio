@@ -1,87 +1,31 @@
 body {
-    background: #f5f4f57c;
+    background: #ffffff;
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
-header .navbar {
-    /*indicando la altura minima que quiero*/
-    min-height: 80px;
-    overflow: hidden;
-    
+.navbar-nav{
+   text-align: right; 
+}
+.navbar .navbar-nav .nav-link{
+    padding-right: 1em;
+}
+.nav-c{
+    background: #fabfb7;
+    line-height: 3.5;
 }
 
-/*---LOGO----*/
-
-header .logo h2,
-header .logo span,
-header .logo p {
-    font-size: 16px;
-    display: inline-block;
-    margin: 0%;
-}
-
-header .logo h2 {
-    /*indco el tamaño que deseo de la funte y convierto la letra en mayuscula*/
-    font-weight: 800;
-    text-transform: uppercase;
-    /* especifica el cambio entre mayúsculas y minúsculas del texto de un elemento*/
-
-}
-
-header .logo .name {
-    color: #e44f9c;
-    padding: 10px;
-}
-
-header .logo .icono {
-    color: #bfbfbf;
-}
-
-header .logo p {
-    color: #777;
-}
-
-/*MENU*/
-header .menu {
-    background: #b0c2f2;
-    padding: 0;
-    font-weight: 1000;
-
-}
-
-header .menu a {
-    display: block;
-    padding: 0 30px;
-    text-decoration: none;
-    /*para quitar las lineas que pueda tener*/
-    color: #fffefe;
-}
-
-
-
-header .menu .c-1:hover {
-    background: #9eb4f3fd
-}
-
-header .menu .c-2:hover {
-    background: #9eb4f3fd
-}
-
-header .menu .c-3:hover {
-    background: #9eb4f3fd
-}
 
 /*--CARRUSEL--*/
 @media screen and (min-width:567px) {
     .cards-wrapper {
         display: flex;
+        
     }
 
     .card {
         margin: 1em auto;
         width: calc(100%/3);
+        box-shadow: 0 2px 2px #4f4c4c;
     }
 
     .img-wrapper {
@@ -98,7 +42,7 @@ header .menu .c-3:hover {
     .card:not(:first-child) {
         display: none;
     }
-
+    
 }
 
     .img-wrapper img {
@@ -117,7 +61,7 @@ header .menu .c-3:hover {
     }
 
     .acerca-de .info .titulo {
-        color: #e44f9c;
+        color: #4b4949;
         font-weight: 600;
         font-size: 40px;
         margin-bottom: 30px;
@@ -125,6 +69,7 @@ header .menu .c-3:hover {
 
     .acerca-de .info .resumen {
         letter-spacing: 1px;
+        font-size: 20px;
         color: #0a0a0a;
     }
 
@@ -132,4 +77,57 @@ header .menu .c-3:hover {
         font-size: 18px;
         font-weight: 600;
         margin-bottom: 10p
+    }
+    /*----tecnologias----*/
+    .acordion{
+        background: #ffda9e;
+    }
+    .tecnolo{
+        border-radius: 5px;
+        border: 1px solid #b0c2f2;
+    }
+    .progress-title{
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .progress-title h3{
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0 0 20px;
+    }
+    .progress-bar{
+        background: #e44f9c;
+    }
+
+    .progress{
+        height: 20px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        box-shadow: 0 2px 2px #4f4c4c;
+        margin-bottom: 10px;
+        overflow: visible;
+        position: relative;
+    }
+
+    .progress .progress-bar{
+        border-radius: 5px;
+        border: 1px solid #b0c2f2;
+        animation: animate-positive 2s;
+    }
+    .progress .progress-value{
+        width: 65px;
+        height: 25px;
+        line-height: 25px;
+        background: #171b3c;
+        font-size: 15px;
+        color: #fff;
+        border-radius:  0 0 15px 15px;
+        border-top: none;
+        box-shadow: 0 2px 2px #4f4c4c;
+        position: absolute;
+        bottom: -25px;
+        right: 60px;
+    
     }

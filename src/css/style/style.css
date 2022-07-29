@@ -1,36 +1,56 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background: #ffffff;
     font-family: 'Montserrat', sans-serif;
+    margin: 0 0 var(--header-height) 0;
+}
+h3{
+    font-weight: 600;
+}
+.navbar-nav {
+    text-align: right;
 }
 
-.navbar-nav{
-   text-align: right; 
-}
-.navbar .navbar-nav .nav-link{
+.navbar .navbar-nav .nav-link {
     padding-right: 1em;
 }
-.nav-c{
+
+.nav-c {
     background: #fabfb7;
     line-height: 3.5;
 }
 
 
 /*--CARRUSEL--*/
+.proyects {
+    padding: 6rem 0 2rem;
+
+}
+
 @media screen and (min-width:567px) {
     .cards-wrapper {
         display: flex;
-        
+        justify-content: center;
     }
 
     .card {
-        margin: 1em auto;
-        width: calc(100%/3);
+
+
+        width: calc(100%/2);
         box-shadow: 0 2px 2px #4f4c4c;
     }
 
     .img-wrapper {
         height: 22vw;
         margin: 0 auto;
+
+
+
         /* display: flex;
     align-items: center;
     justify-content: center;*/
@@ -38,96 +58,118 @@ body {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .section {
+        padding: 6rem 0 2rem;
+    }
+}
+
 @media screen and (max-width:567px) {
     .card:not(:first-child) {
         display: none;
     }
-    
+
 }
 
-    .img-wrapper img {
-        max-width: 100%;
-        max-height: 100%;
-    }
+.img-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
-    /*-----ACERCA DE MI------*/
-    .acerca-de {
-        padding: 30px;
-        margin-bottom: 40px;
+/*-----ACERCA DE MI------*/
+@media screen and (min-width: 768px) {
+    .info {
+        text-align: initial;
     }
+}
 
-    .acerca-de .foto {
-        text-align: center;
-    }
+.acerca-de {
+    padding: 60px;
+    row-gap: 5rem;
 
-    .acerca-de .info .titulo {
-        color: #4b4949;
-        font-weight: 600;
-        font-size: 40px;
-        margin-bottom: 30px;
-    }
+}
 
-    .acerca-de .info .resumen {
-        letter-spacing: 1px;
-        font-size: 20px;
-        color: #0a0a0a;
-    }
+.acerca-de .foto {
+    text-align: center;
+    row-gap: 5rem;
 
-    .acerca-de .info .label {
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 10p
-    }
-    /*----tecnologias----*/
-    .acordion{
-        background: #ffda9e;
-    }
-    .tecnolo{
-        border-radius: 5px;
-        border: 1px solid #b0c2f2;
-    }
-    .progress-title{
-        width: 100%;
-        height: auto;
-        
-    }
+}
 
-    .progress-title h3{
-        font-size: 18px;
-        font-weight: 600;
-        margin: 0 0 20px;
-    }
-    .progress-bar{
-        background: #e44f9c;
-    }
+.acerca-de .info .titulo {
+    color: #4b4949;
+    font-weight:800;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
 
-    .progress{
-        height: 20px;
-        border-radius: 5px;
-        border: 1px solid #000;
-        box-shadow: 0 2px 2px #4f4c4c;
-        margin-bottom: 10px;
-        overflow: visible;
-        position: relative;
-    }
+.acerca-de .info .resumen {
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #0a0a0a;
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
 
-    .progress .progress-bar{
-        border-radius: 5px;
-        border: 1px solid #b0c2f2;
-        animation: animate-positive 2s;
-    }
-    .progress .progress-value{
-        width: 65px;
-        height: 25px;
-        line-height: 25px;
-        background: #171b3c;
-        font-size: 15px;
-        color: #fff;
-        border-radius:  0 0 15px 15px;
-        border-top: none;
-        box-shadow: 0 2px 2px #4f4c4c;
-        position: absolute;
-        bottom: -25px;
-        right: 60px;
-    
-    }
+.acerca-de .info .label {
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+/*----tecnologias----*/
+.acordion {
+    background: #ffda9e;
+}
+
+.tecnolo {
+    border-radius: 5px;
+    border: 1px solid #b0c2f2;
+}
+
+.progress-title {
+    width: 100%;
+    height: auto;
+
+}
+
+.progress-title h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+
+.progress-bar {
+    background: #e44f9c;
+}
+
+.progress {
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 2px #4f4c4c;
+    margin-bottom: 10px;
+    overflow: visible;
+    position: relative;
+}
+
+.progress .progress-bar {
+    border-radius: 5px;
+    border: 1px solid #b0c2f2;
+    animation: animate-positive 2s;
+}
+
+.progress .progress-value {
+    width: 65px;
+    height: 25px;
+    line-height: 25px;
+    background: #171b3c;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 0 0 15px 15px;
+    border-top: none;
+    box-shadow: 0 2px 2px #4f4c4c;
+    position: absolute;
+    bottom: -25px;
+    right: 60px;
+
+}

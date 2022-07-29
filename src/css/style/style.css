@@ -11,20 +11,14 @@ body {
 }
 h3{
     font-weight: 600;
-}
-.navbar-nav {
-    text-align: right;
+    color: #ffb6af;
 }
 
-.navbar .navbar-nav .nav-link {
-    padding-right: 1em;
+.navBar{
+   
+    font-weight:800;
+    color: #ffb6af;
 }
-
-.nav-c {
-    background: #fabfb7;
-    line-height: 3.5;
-}
-
 
 /*--CARRUSEL--*/
 .proyects {
@@ -42,7 +36,7 @@ h3{
 
 
         width: calc(100%/2);
-        box-shadow: 0 2px 2px #4f4c4c;
+        margin-bottom: var(--mb-2-5);
     }
 
     .img-wrapper {
@@ -84,19 +78,19 @@ h3{
 }
 
 .acerca-de {
-    padding: 60px;
+   
     row-gap: 5rem;
+    padding: 6rem 0 2rem;
 
 }
-
-.acerca-de .foto {
-    text-align: center;
-    row-gap: 5rem;
-
+.foto{
+    display: flex;
+    justify-content: center;
 }
+
 
 .acerca-de .info .titulo {
-    color: #4b4949;
+    color: #90c2e3;
     font-weight:800;
     font-size: 40px;
     margin-bottom: 30px;
@@ -110,20 +104,19 @@ h3{
     margin-bottom: var(--mb-2-5);
 }
 
-.acerca-de .info .label {
-    font-size: 18px;
-    font-weight: 600;
 
-}
 
 /*----tecnologias----*/
 .acordion {
-    background: #ffda9e;
+    background: #b0f2c2;
+    box-shadow: 0 2px 2px #4f4c4c;
+   margin: 1em;
+
 }
 
 .tecnolo {
     border-radius: 5px;
-    border: 1px solid #b0c2f2;
+    border: 1px solid #b0f2c2;
 }
 
 .progress-title {
@@ -139,7 +132,7 @@ h3{
 }
 
 .progress-bar {
-    background: #e44f9c;
+    background:#ffb6af ;
 }
 
 .progress {
@@ -162,9 +155,9 @@ h3{
     width: 65px;
     height: 25px;
     line-height: 25px;
-    background: #171b3c;
+    background: #ffb6af;
     font-size: 15px;
-    color: #fff;
+    color:#000000;
     border-radius: 0 0 15px 15px;
     border-top: none;
     box-shadow: 0 2px 2px #4f4c4c;

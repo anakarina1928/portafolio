@@ -37,16 +37,29 @@
     <!--LOGOTIPO-->
 
 
-    <header>
-      
+    <header class="container">
+        <ul class="nav justify-content-around">
+            <li class="nav-item">
+                <a class="nav-link active navBar" aria-current="page" href="#my">Conoceme</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navBar" href="#">Tecnologias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navBar" href="#">Proyectos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  navBar" href="#" tabindex="-1" aria-disabled="true">contactame</a>
+            </li>
+        </ul>
     </header>
 
 
 
-    <main class="container ">
+    <main class="container-md">
 
 
-        <div class="row d-flex align-items-center acerca-de">
+        <div class="row d-flex align-items-center acerca-de ">
             <div class="col-12 col-lg-4 foto">
 
                 <img id="my" class="rounded img-fluid" src="./img/ana.png" alt="foto de perfil">
@@ -54,9 +67,9 @@
 
             <div class=" col-12 col-lg-8 info">
 
-                <h2 class="titulo">¡Hola, soy <br>  Ana Karina!</h2>
-                <p class="resumen" >
-                    Front-end developer apasionada por el artes y la tecnología,
+                <h2 class="titulo d-flex justify-content-center">¡Hola, soy  Ana Karina!</h2>
+                <p class="resumen">
+                    Front-end developer apasionada por el arte y la tecnología,
                     con experiencia de educación en derecho. Soy una mujer muy comprometida
                     con mi crecimiento personal y profesional, enfocada en la construcción de
                     espacios que tengan un impacto positivo en el mundo que me rodea. Como desarrolladora,
@@ -68,20 +81,20 @@
 
         </div>
     </main>
-   
-        <!--TECNOLOGIAS-->
-        <h3 class="d-flex align-items-center flex-column section ">
-            TECNOLOGÍAS
-             <small class="text-muted">¡Siempre en contante aprendizaje!</small>
-        </h3>
-    <section class="container">
+
+    <!--TECNOLOGIAS-->
+    <h3 class="d-flex align-items-center flex-column section ">
+        TECNOLOGÍAS
+        <small class="text-muted">¡Siempre en contante aprendizaje!</small>
+    </h3>
+    <section class="container-sm">
         <div class="accordion accordion-flush  justify-content-around " id="accordionFlushExample">
-            
+
             <div class="accordion-item  ">
                 <h2 class="accordion-header " id="flush-headingOne">
                     <button class="acordion accordion-button collapsed " type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        front-end
+                       <h4>front-end</h4> 
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse  collapse" aria-labelledby="flush-headingOne"
@@ -140,14 +153,14 @@
                             </div>
                     </div>
 
-                  
+
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingTwo">
                     <button class=" acordion accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        OTROS
+                       <h4> OTROS </h4> 
                     </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
@@ -175,26 +188,27 @@
                         </div>
                     </div>
 
-                    </section>
-                </div>
-            </div>
-        </div>
+    </section>
+    </div>
+    </div>
+    </div>
 
-        </div>
+    </div>
 
 
     </section>
 
-    
 
-    <section class="container proyects section " id="proyect">
 
-          <h3 class="d-flex align-items-center flex-column ">
-           PROYECTOS
-            <small class="text-muted"><a href="https://github.com/anakarina1928" >¡puedes ver más en mi gitHub!</a></small>
-          </h3>
+    <section class="container-md proyects section " id="proyect">
 
-        <div id="carouselExampleControls" class=" carousel  carousel-dark slide d-none d-sm-block"
+        <h3 class="d-flex align-items-center flex-column ">
+            PROYECTOS
+            <small class="text-muted"><a href="https://github.com/anakarina1928">¡puedes ver más en mi
+                    gitHub!</a></small>
+        </h3>
+
+        <div id="carouselExampleControls" class=" carousel section  carousel-dark slide d-none d-sm-block"
             data-bs-ride="carousel ">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -206,8 +220,8 @@
                             <div class="card-body">
                                 <h5 class="card-title">BURGERLAB - Menu restaurante</h5>
                                 <p class="card-text">Interfaz donde el usuario interactua
-                                     con el sistema para registrar, obtener, monitorear y 
-                                     actualizar información en tiempo real.</p>
+                                    con el sistema para registrar, obtener, monitorear y
+                                    actualizar información en tiempo real.</p>
                                 <a href="https://burger-queen-44a59.web.app/" class="btn btn-primary">DEMO:</a>
                             </div>
                         </div>
@@ -256,48 +270,9 @@
             </button>
         </div>
     </section>
-    <div class="col-12 col-sm-6">
-        <h1>hola Ana!</h1>
-
-        <p>Solo quiero pedirte que sigas soñando, que sigas siendo esa mujer con alma de niña,
-            que le gusta bailar, cantar canciones de casi ángeles y siempre buscándo el lado
-            positivo a todo jaja, nunca pierdas esa esencia que nos hace especiales. Lloro con
-            saber que estas logrando esas cosas que tanto le pedíamos a dios en esas noches por
-            la ventana (sabes que no solo hablo de laboratoria), porfis dale un beso enorme a Fer
-            de mi parte por ser nuestra roca en todo este proceso y ser la luz que nos guió en todo el camino.
-        </p>
-        <button class="btn btn-primary" > ver mas</button>
-    </div>
-    
-    <div class="col-6">
-        <h1>hola Ana!</h1>
-
-        <p>Solo quiero pedirte que sigas soñando, que sigas siendo esa mujer con alma de niña,
-            que le gusta bailar, cantar canciones de casi ángeles y siempre buscándo el lado
-            positivo a todo jaja, nunca pierdas esa esencia que nos hace especiales. Lloro con
-            saber que estas logrando esas cosas que tanto le pedíamos a dios en esas noches por
-            la ventana (sabes que no solo hablo de laboratoria), porfis dale un beso enorme a Fer
-            de mi parte por ser nuestra roca en todo este proceso y ser la luz que nos guió en todo el camino.
-        </p>
-        <button class="btn btn-primary" > ver mas</button>
-    </div>
-    <div class="col-12">
-        <h1>hola Ana!</h1>
-
-        <p>Solo quiero pedirte que sigas soñando, que sigas siendo esa mujer con alma de niña,
-            que le gusta bailar, cantar canciones de casi ángeles y siempre buscándo el lado
-            positivo a todo jaja, nunca pierdas esa esencia que nos hace especiales. Lloro con
-            saber que estas logrando esas cosas que tanto le pedíamos a dios en esas noches por
-            la ventana (sabes que no solo hablo de laboratoria), porfis dale un beso enorme a Fer
-            de mi parte por ser nuestra roca en todo este proceso y ser la luz que nos guió en todo el camino.
-        </p>
-        <button class="btn btn-primary" > ver mas</button>
-    </div>
-
-</div>
 
 
-</div>
+
 
 
 

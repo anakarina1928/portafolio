@@ -34,7 +34,10 @@
     <!--quiero  que tenga un tamaño mediano en adelante de 12  y quiero que un tamaño de columna largo que avarque el 100% del espacio disponible
                     justfy-content-lg-start : indico que para un tamaño largo quiero que el texto este a la izquierda
                     -->
-    <!--LOGOTIPO-->
+    <!--LOGOTIPO
+    
+    
+    -->
 
 
     <header class="container">
@@ -43,58 +46,114 @@
                 <a class="nav-link active navBar" aria-current="page" href="#my">Conoceme</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link navBar" href="#">Tecnologias</a>
+                <a class="nav-link navBar" href="#tecnologias">Tecnologias</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link navBar" href="#">Proyectos</a>
+                <a class="nav-link navBar" href="#proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link  navBar" href="#" tabindex="-1" aria-disabled="true">contactame</a>
+                <a class="nav-link  navBar" href="#contactame" tabindex="-1" aria-disabled="true">contactame</a>
             </li>
         </ul>
+        <div class="d-flex justify-content-center  img-header">
+            <img id="my" class="rounded  img" src="./img/ana-dev-lo.png" alt="foto de perfil">
+        </div>
+
+
     </header>
 
 
 
-    <main class="container-md">
+    <!--SOBRE MI: -->
+    <section class="container">
 
-
-        <div class="row d-flex align-items-center acerca-de ">
-            <div class="col-12 col-lg-4 foto">
-
-                <img id="my" class="rounded img-fluid" src="./img/ana.png" alt="foto de perfil">
+        <div class="row no-gutters acerca-de">
+            <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
+                <img id="my" class="rounded img-fluid" src="./img/ana-gris.png" alt="foto de perfil">
             </div>
+            <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+                <div class="content d-flex flex-column justify-content-center">
 
-            <div class=" col-12 col-lg-8 info">
+                    <p class="my">
+                        Soy apasionada por el arte y la tecnología,
+                        con experiencia de educación en derecho. Soy una mujer muy comprometida
+                        con mi crecimiento personal y profesional, enfocada en la construcción de
+                        espacios que tengan un impacto positivo en el mundo que me rodea. Como desarrolladora,
+                        reconozco el gran aporte del trabajo colaborativo, que permite crear soluciones creativas y
+                        eficaces en tecnología, asegurando cuidar la experiencia del usuario.
+                    </p>
 
-                <h2 class="titulo d-flex justify-content-center">¡Hola, soy  Ana Karina!</h2>
-                <p class="resumen">
-                    Front-end developer apasionada por el arte y la tecnología,
-                    con experiencia de educación en derecho. Soy una mujer muy comprometida
-                    con mi crecimiento personal y profesional, enfocada en la construcción de
-                    espacios que tengan un impacto positivo en el mundo que me rodea. Como desarrolladora,
-                    reconozco el gran aporte del trabajo colaborativo, que permite crear soluciones creativas y
-                    eficaces en tecnología, asegurando cuidar la experiencia del usuario.
-                </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    </section>
+
+    <section id="services" class="services section-bg">
+        <div class="container">
+            <h3 class="d-flex align-items-center flex-column section section-title ">
+                HABILIDADES
+                <small class="text-muted">Mis skills</small>
+            </h3>
+
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="icon-heart"></i></div>
+                        <h4 class=" my title">Iniciativa</h4>
+                        <p class=" resumen description"> No le tengo miedo a asumir nuevos retos, me gusta salir de mi zona de
+                            confort y arriesgarme a probar y aprender. Así siento que me reto a mi misma a crecer
+                            constantemente.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-file"></i></div>
+                        <h4 class="my title">Trabajo en equipo</h4>
+                        <p class="resumen description">Siempre con empatia, apoyando ideas distintas e interesantes para
+                            desarrollarlas.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><span class="icon-dot"></span></div>
+                        <h4 class="my title">Resiliencia</h4>
+                        <p class="resumen description">He logrado salir fortalecida de distintas situaciones complejas y
+                            considero que eso me ha permitido conocerme mejor a mi misma, y saber que puedo sobrepasar
+                            las situaciones de dificultad y lograr mis objetivos con éxito.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-world"></i></div>
+                        <h4 class="my title">Análisis y resolución de problemas<a href=""></a></h4>
+                        <p class=" resumen description">Me tomo el tiempo para observar e investigar y luego voy a la acción.</p>
+                    </div>
+                </div>
 
             </div>
 
         </div>
-    </main>
+    </section>
 
     <!--TECNOLOGIAS-->
-    <h3 class="d-flex align-items-center flex-column section ">
+    <h3 id="tecnologias" class="d-flex align-items-center flex-column section ">
         TECNOLOGÍAS
-        <small class="text-muted">¡Siempre en contante aprendizaje!</small>
+        <small class=" resumen text-muted">¡Siempre en constante aprendizaje!</small>
     </h3>
-    <section class="container-sm">
+    <section  class="container-sm">
         <div class="accordion accordion-flush  justify-content-around " id="accordionFlushExample">
 
             <div class="accordion-item  ">
                 <h2 class="accordion-header " id="flush-headingOne">
                     <button class="acordion accordion-button collapsed " type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                       <h4>front-end</h4> 
+                        <h4 class="resumen">front-end</h4>
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse  collapse" aria-labelledby="flush-headingOne"
@@ -160,7 +219,7 @@
                 <h2 class="accordion-header" id="flush-headingTwo">
                     <button class=" acordion accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                       <h4> OTROS </h4> 
+                        <h4 class="resumen"> OTROS </h4>
                     </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
@@ -176,7 +235,7 @@
                                 </div>
                             </div>
                             <div class="progress-title">
-                                <h3>bootstrap</h3>
+                                <h3>bootstrap 5 </h3>
                                 <div class="progress">
                                     <div class="progress-bar" style="width:50%" ;></div>
                                     <div class="progress-value">50%</div>
@@ -202,10 +261,9 @@
 
     <section class="container-md proyects section " id="proyect">
 
-        <h3 class="d-flex align-items-center flex-column ">
+        <h3  id="proyectos" class="d-flex align-items-center flex-column ">
             PROYECTOS
-            <small class="text-muted"><a href="https://github.com/anakarina1928">¡puedes ver más en mi
-                    gitHub!</a></small>
+            <small class="text-muted">¡Puedes ver más en mi gitHub!</small>
         </h3>
 
         <div id="carouselExampleControls" class=" carousel section  carousel-dark slide d-none d-sm-block"
@@ -217,9 +275,9 @@
                             <div class="img-wrapper">
                                 <img src="./img/burguer-lab.png" class="card-img-top" alt="...">
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">BURGERLAB - Menu restaurante</h5>
-                                <p class="card-text">Interfaz donde el usuario interactua
+                            <div class="info-carrusel card-body">
+                                <h5 class=" my card-title">BURGERLAB - Menu restaurante</h5>
+                                <p class=" resumen card-text">Interfaz donde el usuario interactua
                                     con el sistema para registrar, obtener, monitorear y
                                     actualizar información en tiempo real.</p>
                                 <a href="https://burger-queen-44a59.web.app/" class="btn btn-primary">DEMO:</a>
@@ -233,11 +291,10 @@
                             <div class="img-wrapper">
                                 <img src="./img/data-lovers.png" class="card-img-top" alt="...">
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div class="info-carrusel card-body">
+                                <h5 class="my card-title">RIO-2016</h5>
+                                <p class="resumen card-text">Diseñada para ser intuitiva a la hora de buscar alguna información de interés a secar de cualquier atleta, país o deporte.</p>
+                                <a href="https://anakarina1928.github.io/LIM016-data-lovers/src/" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
@@ -248,11 +305,10 @@
                             <div class="img-wrapper">
                                 <img src="./img/gifs.png" class="card-img-top" alt="...">
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div class="info-carrusel card-body">
+                                <h5 class=" my card-title">GIFS - Buscador</h5>
+                                <p class="resumen card-text">Aplicación intuitiva, realizada con React para la busqueda de gifs para guardar y compartir.</p>
+                                <a href="https://gif-expert.onrender.com/" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
@@ -272,10 +328,50 @@
     </section>
 
 
+    <section class="container">
+        <div class="container">
+
+            <h3  id="contactame" class="d-flex align-items-center flex-column section ">
+                CONTACTAME
+                <small class="text-muted">¡No dudes en escribir!</small>
+            </h3>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-4 col-md-4">
+                <div class="contact-about">
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="info">
+
+
+                    <div class="d-flex align-items-center mt-4">
+                        <i class="bi bi-envelope"></i>
+                        <p class="resumen">anakarina.dev@gmail.com</p>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-4">
+                        <i class="bi bi-phone"></i>
+                        <p class="resumen">+59 970179443</p>
+                    </div>
+
+                </div>
+            </div>
 
 
 
 
+
+        </div>
+    </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+    
 
     <!--importante colocarlo en este orden-->
     <script src="js/jquery-3.6.0.min.js"></script>

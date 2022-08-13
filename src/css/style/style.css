@@ -4,23 +4,34 @@
     margin: 0;
 }
 
+
 body {
-    background: #ffffff;
+    background:#4f4c4c;
     font-family: 'Montserrat', sans-serif;
     margin: 0 0 var(--header-height) 0;
 }
 h3{
-    font-weight: 600;
+    font-weight: 800;
     color: #ffb6af;
+    text-shadow: -1px 0 #4f4c4c, 0 1px #4f4c4c,
+	  1px 0 black, 0 -1px black
+    
 }
 
 .navBar{
    
     font-weight:800;
     color: #ffb6af;
+    text-shadow: -1px 0 #4f4c4c, 0 1px #4f4c4c,
+	  1px 0 black, 0 -1px black
 }
 
 /*--CARRUSEL--*/
+.info-carrusel{
+    background: #ffb6af;
+}
+
+
 .proyects {
     padding: 6rem 0 2rem;
 
@@ -34,13 +45,12 @@ h3{
 
     .card {
 
-
-        width: calc(100%/2);
+        width: calc(100%/2.5);
         margin-bottom: var(--mb-2-5);
     }
 
     .img-wrapper {
-        height: 22vw;
+        
         margin: 0 auto;
 
 
@@ -71,53 +81,43 @@ h3{
 }
 
 /*-----ACERCA DE MI------*/
-@media screen and (min-width: 768px) {
-    .info {
-        text-align: initial;
-    }
+.resumen{
+    color: #4f4c4c;
+    font-weight: 600;
+    
+}
+.my{
+    color: #b0c2f2;
+    font-weight: 800;
+    text-shadow: -1px 0 #4f4c4c, 0 1px #141414,
+	  1px 0 black, 0 -1px black
 }
 
 .acerca-de {
    
     row-gap: 5rem;
-    padding: 6rem 0 2rem;
+    padding: 4rem 0 1rem;
 
 }
+/*
 .foto{
     display: flex;
     justify-content: center;
-}
+}*/
 
 
-.acerca-de .info .titulo {
-    color: #90c2e3;
-    font-weight:800;
-    font-size: 40px;
-    margin-bottom: 30px;
-}
-
-.acerca-de .info .resumen {
-    letter-spacing: 1px;
-    font-size: 20px;
-    color: #0a0a0a;
-    text-align: center;
-    margin-bottom: var(--mb-2-5);
-}
 
 
 
 /*----tecnologias----*/
 .acordion {
-    background: #b0f2c2;
+    background: #b0c2f2;
     box-shadow: 0 2px 2px #4f4c4c;
-   margin: 1em;
+   
 
 }
 
-.tecnolo {
-    border-radius: 5px;
-    border: 1px solid #b0f2c2;
-}
+
 
 .progress-title {
     width: 100%;
@@ -129,6 +129,8 @@ h3{
     font-size: 18px;
     font-weight: 600;
     margin: 0 0 20px;
+    text-shadow: -1px 0 black, 0 1px black,
+	  1px 0 black, 0 -1px black
 }
 
 .progress-bar {
@@ -166,3 +168,91 @@ h3{
     right: 60px;
 
 }
+
+.img-header{
+    padding: 30px;
+}
+/*HABILIDADES*/
+.services .icon-box {
+    padding: 20px 15px;
+    position: relative;
+    overflow: hidden;
+    background: #ffb6af;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .services .icon-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    transition: ease-in-out 0.3s;
+    z-index: -1;
+  }
+  
+  .services .icon-box:hover::before {
+    background: #b0c2f2;
+    height: 100%;
+    border-radius: 0px;
+  }
+  
+  .services .icon {
+    margin: 0 auto 30px auto;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #b0c2f2;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .services .icon i {
+    font-size: 36px;
+    line-height: 1;
+    color: #fff;
+  }
+  
+  .services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .services .title a {
+    color: #111;
+  }
+  
+  .services .description {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+  
+  .services .icon-box:hover .title a,
+  .services .icon-box:hover .description {
+    color: #fff;
+  }
+  
+  .services .icon-box:hover .icon {
+    background: #fff;
+  }
+  
+  .services .icon-box:hover .icon i {
+    color:#b0c2f2;
+  }
+  
+  @media (max-width: 768px) {
+    .services .icon-box::before {
+      bottom: 60%;
+    }
+  }
+/*sssssssssssssssssssssssssssssssssssssssssssss*/
+

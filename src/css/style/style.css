@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+.footer-pie{
+  background: #ffb6af;
+  padding: auto;
+}
 .social-links{
 font-size: 36px;
 }
@@ -25,6 +29,11 @@ font-size: 36px;
   color: #4f4c4c;
   
    
+
+}
+.img-ana{
+  max-width: 100%;
+    height: auto;
 
 }
 .button-cv{
@@ -68,6 +77,9 @@ h3{
 
 .proyects {
     padding: 6rem 0 2rem;
+    max-width: 100%;
+    height: auto;
+
 
 }
 

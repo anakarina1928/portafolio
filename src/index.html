@@ -16,9 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,600;0,800;1,100;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./css/style/style.css">
     <link rel="stylesheet" href="./css/fontello.css">
     <link rel="shortcut icon" class="logo" href="./img/ana200x200.png">
@@ -27,448 +27,245 @@
 </head>
 
 <body>
-    <!--
-                        rounded-top :  para colocar las esquinas redondiadas en la parte de arriba
-                        align-items-strech : es para que los elementos que tenemos dentro del div se amplien
-                    -->
-
-    <!--quiero  que tenga un tamaño mediano en adelante de 12  y quiero que un tamaño de columna largo que avarque el 100% del espacio disponible
-                    justfy-content-lg-start : indico que para un tamaño largo quiero que el texto este a la izquierda
-                    -->
-    <!--LOGOTIPO
-    
-    
-    -->
-
-
-    <header class="container">
-        <ul class="nav justify-content-around ">
-            <li class="nav-item">
-                <a class="nav-link active navBar" aria-current="page" href="#my">Conoceme</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link navBar" href="#tecnologias">Tecnologias</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link navBar" href="#proyectos">Proyectos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link  navBar" href="#contactame" tabindex="-1" aria-disabled="true">contactame</a>
-            </li>
-        </ul>
-        <div class="d-flex justify-content-center  img-header">
-            <img id="my" class="rounded  img" src="./img/ana-dev-lo.png" alt="foto de perfil">
+    <!--NABAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none name ">Ana karina</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                    src="./img/ana200x200.png" alt="..." /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">sobre mi</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">contactame</a></li>
+            </ul>
         </div>
+    </nav>
 
+    <div class="container-fluid p-0">
+        <!--INFORMACION -->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    front end developer
+                    <span class="text-primary-name">Ana Karina</span>
+                </h1>
+                <div class="subheading mb-5">
 
-    </header>
-
-
-
-    <!--SOBRE MI: -->
-    <section class="container">
-
-        <div class="row no-gutters acerca-de">
-            <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
-                <img id="my" class="img-ana rounded img-fluid" src="./img/ana-gris.png" alt="foto de perfil">
-            </div>
-            <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
-                <div class="content d-flex flex-column justify-content-center">
-
-                    <p class="my">
-                        Soy apasionada por el arte y la tecnología,
-                        con experiencia de educación en derecho. Soy una mujer muy comprometida
-                        con mi crecimiento personal y profesional, enfocada en la construcción de
-                        espacios que tengan un impacto positivo en el mundo que me rodea. Como desarrolladora,
-                        reconozco el gran aporte del trabajo colaborativo, que permite crear soluciones creativas y
-                        eficaces en tecnología, asegurando cuidar la experiencia del usuario.
-                    </p>
-                   
-                        <a download="" href="./file/ana-cv.pdf" class="button-cv d-flex align-items-center">
-                            Descarga mi CV<i
-                                class=" d-flex align-items-center uil uil-download-alt button__icon"></i></a>
-                        <div class="social-links">
-
-                            <a href="https://github.com/anakarina1928" class=""><i
-                                    class="bx icon-contac icon-github"></i></a>
-                            <a href="https://www.linkedin.com/in/anakarina-nak/" class="linkedin"><i
-                                    class="icon-contac icon-linkedin-circled"></i></a>
-
-                        </div>
-                       
-                  
+                    <a href="anakarina.dev@gmail.com">¡trabajemos juntos!</a>
                 </div>
+                <p class="lead mb-5">
+                    Soy apasionada por el arte y la tecnología,
+                    con experiencia de educación en derecho. Soy una mujer muy comprometida
+                    con mi crecimiento personal y profesional, enfocada en la construcción de
+                    espacios que tengan un impacto positivo en el mundo que me rodea. Como desarrolladora,
+                    reconozco el gran aporte del trabajo colaborativo, que permite crear soluciones creativas y
+                    eficaces en tecnología, asegurando cuidar la experiencia del usuario.
+                </p>
+                <div class="d-flex justify-content-around">
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://github.com/anakarina1928"><i
+                                class="fab   icon-github"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/anakarina-nak/"><i
+                                class=" fab icon-linkedin-circled"></i></a>
+                        <a class="social-icon" href="https://https://twitter.com/@anakarina1928"><i
+                                class=" fab icon-twitter-circled"></i></a>
 
-            </div>
-        </div>
-
-    </section>
-    </section>
-
-    <section id="services" class="services section-bg">
-        <div class="container">
-            <h3 class="d-flex align-items-center flex-column section section-title ">
-                HABILIDADES
-                <small class="text-muted">Mis skills</small>
-            </h3>
-
-
-            <div class="row">
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box">
-                        <div class="icon"><i class="icon-feliz"></i></div>
-                        <h4 class=" my title">Iniciativa</h4>
-                        <p class=" resumen description"> No le tengo miedo a asumir nuevos retos, me gusta salir de mi
-                            zona de
-                            confort y arriesgarme a probar y aprender. Así siento que me reto a mi misma a crecer
-                            constantemente.</p>
                     </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx icon-users"></i></div>
-                        <h4 class="my title">Trabajo en equipo</h4>
-                        <p class="resumen description">Siempre con empatia, apoyando ideas distintas e interesantes para
-                            desarrollarlas.</p>
+                    <div class="subheading mb-5">
+                        <a download="" href="./file/ana-cv.pdf" class="button-cv d-flex align-items-center">Descarga mi
+                            CV<i class="  uil uil-download-alt button__icon"></i></a>
                     </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx icon-heart-empty"></i></div>
-                        <h4 class="my title">Resiliencia</h4>
-                        <p class="resumen description">He logrado salir fortalecida de distintas situaciones complejas y
-                            considero que eso me ha permitido conocerme mejor a mi misma, y saber que puedo sobrepasar
-                            las situaciones de dificultad y lograr mis objetivos con éxito.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx icon-emo-wink2"></i></div>
-                        <h4 class="my title">Análisis y resolución de problemas<a href=""></a></h4>
-                        <p class=" resumen description">Me tomo el tiempo para observar e investigar y luego voy a la
-                            acción.</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!--TECNOLOGIAS-->
-    <h3 id="tecnologias" class="d-flex align-items-center flex-column section ">
-        TECNOLOGÍAS
-        <small class=" resumen text-muted">¡Siempre en constante aprendizaje!</small>
-    </h3>
-    <section class="container-sm">
-        <div class="accordion accordion-flush  justify-content-around " id="accordionFlushExample">
-
-            <div class="accordion-item  ">
-                <h2 class="accordion-header " id="flush-headingOne">
-                    <button class="acordion accordion-button collapsed " type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        <h4 class="resumen">front-end</h4>
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse  collapse" aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <section class="container">
-                            <div class="row tecnolo">
-                                <div class="col-md-12">
-                                    <div class="progress-title">
-                                        <h3>HTML</h3>
-                                        <div class="progress">
-                                            <div class="progress-bar" style="width:75%" ;></div>
-                                            <div class="progress-value">75%</div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="progress-title">
-                                    <h3>JAVASCRIPT</h3>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width:70%" ;></div>
-                                        <div class="progress-value">70%</div>
-
-                                    </div>
-                                </div>
-
-                                <div class="progress-title">
-                                    <h3>REACT</h3>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width:65%" ;></div>
-                                        <div class="progress-value">65%</div>
-
-                                    </div>
-
-                                </div>
-                                <div class="progress-title">
-                                    <h3>CSS</h3>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width:50%" ;></div>
-                                        <div class="progress-value">50%</div>
-
-                                    </div>
-                                </div>
-
-                                <div class="progress-title">
-                                    <h3>NODE.JS</h3>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width:50%" ;></div>
-                                        <div class="progress-value">50%</div>
-
-                                    </div>
-                                </div>
-
-
-
-                            </div>
-                    </div>
-
-
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class=" acordion accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        <h4 class="resumen"> OTROS </h4>
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="row tecnolo">
+        </section>
+        <hr class="m-0" />
+        <!-- Experience-->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Mis proyectos</h2>
 
-                            <div class="progress-title">
-                                <h3>NODE.JS</h3>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:50%" ;></div>
-                                    <div class="progress-value">50%</div>
-                                </div>
-                            </div>
-                            <div class="progress-title">
-                                <h3>bootstrap 5 </h3>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:50%" ;></div>
-                                    <div class="progress-value">50%</div>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-
-    </section>
-    </div>
-    </div>
-    </div>
-
-    </div>
-
-
-    </section>
-
-<!---PROYECTOS-->
-
-    <section class="container-md proyects section ">
-
-        <h3 id="proyectos" class="d-flex align-items-center flex-column ">
-            PROYECTOS
-            <small class="text-muted">¡Puedes ver más en mi gitHub!</small>
-        </h3>
-
-        <div id="carouselExampleControls" class=" carousel section  carousel-dark slide d-none d-sm-block"
-            data-bs-ride="carousel ">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="cards-wrapper">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
                         <div class="card">
-                            <div class="img-wrapper">
-                                <img src="./img/burguer-lab.png" class="card-img-top" alt="...">
-                            </div>
-                            <div class="info-carrusel card-body">
-                                <h5 class=" my card-title">BURGERLAB - Menu restaurante</h5>
-                                <p class=" resumen card-text">Interfaz donde el usuario interactua
+                            <img src="./img/burguer-lab.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">BURGERLAB - Menu restaurante</h5>
+                                <p class="card-text">Interfaz donde el usuario interactua
                                     con el sistema para registrar, obtener, monitorear y
                                     actualizar información en tiempo real.<br>
-                                    Github, Github projects, Firebase, React, Javascript, HTML, Css, Jest, Mocks, npm.
-                                </p>
+                                    Github, Github projects, Firebase, React, Javascript, HTML, Css, npm.</p>
                                 <a href="https://burger-queen-44a59.web.app/"
                                     class="button  d-flex align-items-center  btn btn-primary">DEMO:</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="cards-wrapper">
+                    <div class="col">
                         <div class="card">
-                            <div class="img-wrapper">
-                                <img src="./img/data-lovers.png" class="card-img-top" alt="...">
-                            </div>
-                            <div class="info-carrusel card-body">
-                                <h5 class="my card-title">RIO-2016</h5>
-                                <p class="resumen card-text">Diseñada para ser intuitiva a la hora de buscar alguna
-                                    información de interés
-                                    a secar de cualquier atleta, país o deporte.<br>
-                                    Github, Javascript, HTML, CSS, Jest .
-                                </p>
-                                <a href="https://anakarina1928.github.io/LIM016-data-lovers/src/"
+                            <img src="./img/lista-tareas.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">TASKLIS</h5>
+                                <p class="card-text">Interfaz diseñada para administrar las tareas personales.
+                                    Es una aplicación sencilla pero llena de funcionalidades que te ayudará mantenerte
+                                    productivo.<br>
+                                    Github, React, Javascript, HTML, Css, Bootstrap5, npm, React-icon.</p>
+                                <a href="https://tasklist-ana.netlify.app/"
                                     class="button  d-flex align-items-center  btn btn-primary">DEMO:</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="cards-wrapper">
+                    <div class="col">
                         <div class="card">
-                            <div class="img-wrapper">
-                                <img src="./img/gifs.png" class="card-img-top" alt="...">
-                            </div>
-                            <div class="  d-flex  flex-column info-carrusel card-body">
-                                <h5 class=" my card-title">GIFS - Buscador</h5>
-                                <p class="resumen card-text">Aplicación intuitiva, realizada con React para la busqueda
-                                    de gifs para guardar y compartir.<br>
-                                    Github, React, Javascript, HTML, Css.
-                                </p>
-                                <a href="https://gif-expert.onrender.com/"
+                            <img src="./img/cotizador-viaje.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">VacationQuote</h5>
+                                <p class="card-text">Aplicación para calcular nuestros gastos de viajes utilizando
+                                    JavaScript<br>
+                                    Github, Javascript, HTML, CSS, Bootstrap5.</p>
+                                <a href="https://vacationquote.netlify.app/"
                                     class="button  d-flex align-items-center  btn btn-primary">DEMO:</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="cards-wrapper">
+                    <div class="col">
                         <div class="card">
-                            <div class="img-wrapper">
-                                <img src="./img/md-links.png" class="card-img-top" alt="...">
-                            </div>
-                            <div class="  d-flex  flex-column info-carrusel card-body">
-                                <h5 class=" my card-title">GIFS - Buscador</h5>
-                                <p class="resumen card-text">Libreria de línea de comando (CLI) ejecutable de línea de comando(𝐂𝐋𝐈) ejecutable con Node.js<br>
-                                    Github, Node.js, Axios, Javascript, Jest, Mocks, npm.
-                                </p>
+                            <img src="./img/md-links.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">MD-LINKS</h5>
+                                <p class="card-text">Libreria de línea de comando (CLI) ejecutable de línea de
+                                    comando(𝐂𝐋𝐈) ejecutable con Node.js<br>
+                                    Github, Node.js, Axios, Javascript, Jest, Mocks, npm.</p>
                                 <a href="https://www.npmjs.com/package/anakarina-links"
                                     class="button  d-flex align-items-center  btn btn-primary">DEMO:</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./img/social.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./img/gifs.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">GIFS - Buscador</h5>
+                                <p class="card-text">Aplicación intuitiva, realizada con React para la busqueda
+                                    de gifs para guardar y compartir.<br>
+                                    Github, React, Postman, Javascript, HTML, Css.</p>
+                                <a href="https://gif-expert.onrender.com/"
+                                    class="button  d-flex align-items-center  btn btn-primary">DEMO:</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./img/data-lovers.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">RIO-2016</h5>
+                                <p class="card-text">Diseñada para ser intuitiva a la hora de buscar alguna
+                                    información de interés
+                                    a secar de cualquier atleta, país o deporte.<br>
+                                    Github, Javascript, HTML, CSS, Jest .</p>
+                                <a href="https://anakarina1928.github.io/LIM016-data-lovers/src/"
+                                    class="button  d-flex align-items-center  btn btn-primary">DEMO:</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Habilidades</h2>
+                <div class="subheading mb-3">Lenguajes y herramientas de programación</div>
+                <img src="./img/tecnologias.png" class="card-img-top" alt="...">
+                <div class="subheading mb-3">Flujo de trabajo</div>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Desarrollo ágil y Scrum
+                    </li>
+
+                </ul>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
+        </section>
+        <hr class="m-0" />
 
-<!--TESTIMONIOS-->
+        <!--FORM-->
+
+        <section class="resume-section d-flex justify-content-around" id="interests">
+
+            <div class="d-flex flex-column">
+                <h2 class="mb-5">No dudes en contactarme</h2>
 
 
+                <div class="social-icons">
+                    <a class="social-icon" href="https://github.com/anakarina1928"><i class="fab   icon-github"></i></a>
+                    <a class="social-icon" href="https://www.linkedin.com/in/anakarina-nak/"><i
+                            class=" fab icon-linkedin-circled"></i></a>
+                    <a class="social-icon" href="https://https://twitter.com/@anakarina1928"><i
+                            class=" fab icon-twitter-circled"></i></a>
 
-<!--CONTACTO-->
-    <h3 id="contactame" class="d-flex align-items-center flex-column section ">
-        CONTACTAME
-        <small class="text-muted">¡No dudes en escribir!</small>
-    </h3>
-
-   
-        <div class="container">
-
-
-            <div class="row">
-
-                <div class="col-lg-4 col-md-4">
-                    <div class="contact-about">
-
-                        <div class="social-links">
-
-                            <a href="https://github.com/anakarina1928" class=""><i
-                                    class="bx icon-contac icon-github"></i></a>
-                            <a href="https://www.linkedin.com/in/anakarina-nak/" class="linkedin"><i
-                                    class="icon-contac icon-linkedin-circled"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4">
-                    <div class="info">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-geo-alt"></i>
-                            <p class="my">Lima, Perú</p>
-                        </div>
-
-                        <div class="d-flex align-items-center mt-4">
-                            <i class="bi bi-envelope"></i>
-                            <p class="my">anakarina.dev@gmail.com</p>
-                        </div>
-
-                        <div class="d-flex align-items-center mt-4">
-                            <i class="bi bi-phone"></i>
-                            <p class="my">+51 970179443</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-5 col-md-8">
-                    <form action="https://formsubmit.co/anakarina.dev@gmail.com" method="POST" role="form"
-                        class="php-email-form">
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
-                        </div>
-                        <div class="form-group mt-3">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Correo"
-                                required>
-                        </div>
-                        <div class="form-group mt-3">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto"
-                                required>
-                        </div>
-                        <div class="form-group mt-3">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"
-                                required></textarea>
-                        </div>
-                        <div class="my-3">
-
-                            <div class="error-message"></div>
-                            <!--  <div class="sent-message">Your message has been sent. Thank you!</div>-->
-
-                        </div>
-                        <div class="  d-flex justify-content-center"><button class="button d-flex align-items-center "
-                                type="submit">Enviar</button></div>
-                    </form>
                 </div>
 
             </div>
 
-        </div>
- 
+
+            <div class="col-lg-5 col-md-8">
+                <form action="https://formsubmit.co/anakarina.dev@gmail.com" method="POST" role="form"
+                    class="php-email-form">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Correo" required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto"
+                            required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"
+                            required></textarea>
+                    </div>
+                    <div class="my-3">
+
+                        <div class="error-message"></div>
+                        <!--  <div class="sent-message">Your message has been sent. Thank you!</div>-->
+
+                    </div>
+                    <div class="  d-flex justify-content-center"><button class="button d-flex align-items-center "
+                            type="submit">Enviar</button></div>
+                </form>
+            </div>
+
+
+    </div>
+
     </section>
-   
-    
-    </main>
-  <footer>
-    <div class="container section ">
-        
-         <p class="navBar">Ana Karina González López - front end develope</p> 
-       
-    
-  </footer>
+    <hr class="m-0" />
+
+
 
     <!--importante colocarlo en este orden-->
-    <script src="js/jquery-3.6.0.min.js"></script>
+
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
